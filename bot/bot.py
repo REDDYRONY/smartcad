@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from telegram.ext import ApplicationBuilder, CommandHandler
 from core.parser import parse_input
 from core.optimization import optimize
